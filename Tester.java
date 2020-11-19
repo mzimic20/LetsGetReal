@@ -155,7 +155,17 @@ public class Tester {
     else System.out.println("failed");
     System.out.println();
 
-    
+    System.out.println("MULTIPLY");
+    System.out.println("a.multiply(b) -> " + a.multiply(b) + " = 1/6");
+    System.out.println("a.multiply(c) -> " + a.multiply(c) + " = 1/9");
+    System.out.println("b.multiply(c) -> " + b.multiply(c) + " = 2/27");
+    System.out.println();
+
+    System.out.println("DIVIDE");
+    System.out.println("a.divide(b) -> " + a.divide(b) + " = 3/2");
+    System.out.println("a.divide(c) -> " + a.divide(c) + " = 9/1");
+    System.out.println("b.divide(c) -> " + b.divide(c) + " = 3/2");
+    System.out.println();
 
   }
 
