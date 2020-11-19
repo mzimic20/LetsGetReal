@@ -1,6 +1,8 @@
 public class Tester {
 
   public static void main(String[]args) {
+    System.out.println("----- RealNumber -----");
+
     RealNumber x = new RealNumber(0.0);
     RealNumber y = new RealNumber(1.0);
     RealNumber z = new RealNumber(1.00001);
@@ -68,6 +70,58 @@ public class Tester {
     else System.out.println("failed");
     System.out.print("y.subtract(z) ");
     if ( (y.subtract(z)).getValue() == 1.0 - 1.00001) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.println();
+
+    System.out.println("----- RationalNumber -----");
+
+    RationalNumber a = new RationalNumber(1, 2);
+    RationalNumber b = new RationalNumber(1, 3);
+    RationalNumber c = new RationalNumber(2, 9);
+    RationalNumber d = new RationalNumber(0, 999);
+    RationalNumber e = new RationalNumber(3, 0);
+    System.out.println();
+
+    System.out.println( "a = " + a.getValue() );
+    System.out.println( "b = " + b.getValue() );
+    System.out.println( "c = " + c.getValue() );
+    System.out.println( "d = " + d.getValue() );
+    System.out.println( "e = " + e.getValue() );
+    System.out.println();
+
+    System.out.println("GETNUMERATOR");
+    System.out.print("a.getNumerator() ");
+    if ( a.getNumerator() == 1) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("b.getNumerator() ");
+    if ( b.getNumerator() == 1) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("c.getNumerator() ");
+    if ( c.getNumerator() == 2) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("d.getNumerator() ");
+    if ( d.getNumerator() == 0) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("e.getNumerator() ");
+    if ( e.getNumerator() == 0) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.println();
+
+    System.out.println("GETDENOMINATOR");
+    System.out.print("a.getDenominator() ");
+    if ( a.getDenominator() == 2) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("b.getDenominator() ");
+    if ( b.getDenominator() == 3) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("c.getDenominator() ");
+    if ( c.getDenominator() == 9) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("d.getDenominator() ");
+    if ( d.getDenominator() == 999) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("e.getDenominator() ");
+    if ( e.getDenominator() == 1) System.out.println("passed");
     else System.out.println("failed");
     System.out.println();
 
