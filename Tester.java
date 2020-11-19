@@ -35,6 +35,42 @@ public class Tester {
     else System.out.println("failed");
     System.out.println();
 
+    System.out.println("MULTIPLY");
+    System.out.print("x.multiply(y) ");
+    if ( (x.multiply(y)).getValue() == 0.0 * 1.0) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("x.multiply(z) ");
+    if ( (x.multiply(z)).getValue() == 0.0 * 1.00001) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("y.multiply(z) ");
+    if ( (y.multiply(z)).getValue() == 1.0 * 1.00001) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.println();
+
+    System.out.println("DIVIDE");
+    System.out.print("x.divide(y) ");
+    if ( (x.divide(y)).getValue() == 0.0) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("x.divide(z) ");
+    if ( (x.divide(z)).getValue() == 0.0) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("y.divide(z) ");
+    if ( (y.divide(z)).getValue() == 1 / 1.00001) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.println();
+
+    System.out.println("SUBTRACT");
+    System.out.print("x.subtract(y) ");
+    if ( (x.subtract(y)).getValue() == 0.0 - 1.0) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("x.subtract(z) ");
+    if ( (x.subtract(z)).getValue() == 0.0 - 1.00001) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("y.subtract(z) ");
+    if ( (y.subtract(z)).getValue() == 1.0 - 1.00001) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.println();
+
   }
 
 }

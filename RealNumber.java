@@ -33,11 +33,11 @@ public class RealNumber{
   *the sum of this and the other
   */
   public RealNumber add(RealNumber other){
-     //other can be ANY RealNumber, including a RationalNumber
-     //or other subclasses of RealNumber (that aren't written yet)
-     double a = this.getValue() + other.getValue();
-     RealNumber sum = new RealNumber( a );
-     return sum;
+    //other can be ANY RealNumber, including a RationalNumber
+    //or other subclasses of RealNumber (that aren't written yet)
+    double a = this.getValue() + other.getValue();
+    RealNumber sum = new RealNumber(a);
+    return sum;
   }
 
   /*
@@ -45,7 +45,9 @@ public class RealNumber{
   *the product of this and the other
   */
   public RealNumber multiply(RealNumber other){
-        return null;
+    double a = this.getValue() * other.getValue();
+    RealNumber product = new RealNumber(a);
+    return product;
   }
 
   /*
@@ -53,7 +55,9 @@ public class RealNumber{
   *this divided by the other
   */
   public RealNumber divide(RealNumber other){
-        return null;
+    double a = this.getValue() / other.getValue();
+    RealNumber quotient = new RealNumber(a);
+    return quotient;
   }
 
   /*
@@ -61,7 +65,9 @@ public class RealNumber{
   *this minus the other
   */
   public RealNumber subtract(RealNumber other){
-    return null;
+    double a = this.getValue() - other.getValue();
+    RealNumber difference = new RealNumber(a);
+    return difference;
   }
 
 }
