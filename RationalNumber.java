@@ -47,7 +47,8 @@ public class RationalNumber extends RealNumber {
   *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.
   */
   public boolean equals(RationalNumber other){
-    return false;
+    if (this.getNumerator() == other.getNumerator() && this.getDenominator() == other.getDenominator()) return true;
+    else return false;
   }
 
 
@@ -55,7 +56,8 @@ public class RationalNumber extends RealNumber {
   *@return the value expressed as "3/4" or "8/3"
   */
   public String toString(){
-    return "" + numerator + "/" + denominator;
+    if (denominator < 0) return "-" + numerator + "/" + (denominator * -1);
+    else return "" + numerator + "/" + denominator;
   }
 
   /**Calculate the GCD of two integers.

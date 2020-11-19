@@ -143,6 +143,18 @@ public class Tester {
     else System.out.println("failed");
     System.out.println();
 
+    System.out.println("EQUALS");
+    System.out.print("a.equals(b) ");
+    if ( a.equals(b) == false) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("a.equals(c) ");
+    if ( a.equals(b) == false) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("d.equals(e) ");
+    if ( d.equals(e) == false) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.println();
+
   }
 
 }
