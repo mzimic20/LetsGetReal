@@ -11,7 +11,7 @@ public class RealNumber{
   }
 
   public String toString(){
-    return ""+value;
+    return "" + value;
   }
   //---------ONLY EDIT BELOW THIS LINE------------
 
@@ -20,7 +20,12 @@ public class RealNumber{
   *Special case: if one is exactly zero, the other must be exactly zero.
   */
   public boolean equals(RealNumber other){
-    return true;
+    if (this.getValue() == 0 && other.getValue() == 0) return true;
+    else {
+      double ratio = this.getValue() / other.getValue();
+      if (ratio <= 1.00001 && ratio >= .99999) return true;
+      else return false;
+    }
   }
 
   /*
@@ -30,7 +35,9 @@ public class RealNumber{
   public RealNumber add(RealNumber other){
      //other can be ANY RealNumber, including a RationalNumber
      //or other subclasses of RealNumber (that aren't written yet)
-     return null;
+     double a = this.getValue() + other.getValue();
+     RealNumber sum = new RealNumber( a );
+     return sum;
   }
 
   /*
@@ -56,5 +63,5 @@ public class RealNumber{
   public RealNumber subtract(RealNumber other){
     return null;
   }
-  
+
 }
