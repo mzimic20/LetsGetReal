@@ -125,6 +125,24 @@ public class Tester {
     else System.out.println("failed");
     System.out.println();
 
+    System.out.println("RECIPROCAL");
+    System.out.print("a.reciprocal() ");
+    if ( (a.reciprocal()).getDenominator() == 1) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("b.reciprocal() ");
+    if ( (b.reciprocal()).getDenominator() == 1) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("c.reciprocal() ");
+    if ( (c.reciprocal()).getDenominator() == 2) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("d.reciprocal() ");
+    if ( (d.reciprocal()).getDenominator() == 1) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.print("e.reciprocal() ");
+    if ( (e.reciprocal()).getDenominator() == 1) System.out.println("passed");
+    else System.out.println("failed");
+    System.out.println();
+
   }
 
 }
