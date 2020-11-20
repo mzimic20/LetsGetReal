@@ -163,8 +163,20 @@ public class Tester {
 
     System.out.println("DIVIDE");
     System.out.println("a.divide(b) -> " + a.divide(b) + " = 3/2");
-    System.out.println("a.divide(c) -> " + a.divide(c) + " = 9/1");
+    System.out.println("a.divide(c) -> " + a.divide(c) + " = 9/4");
     System.out.println("b.divide(c) -> " + b.divide(c) + " = 3/2");
+    System.out.println();
+
+    System.out.println("ADD");
+    System.out.println("a.add(b) -> " + a.add(b) + " = 5/6");
+    System.out.println("a.add(c) -> " + a.add(c) + " = 13/18");
+    System.out.println("b.add(c) -> " + b.add(c) + " = 5/9");
+    System.out.println();
+
+    System.out.println("SUBTRACT");
+    System.out.println("a.subtract(b) -> " + a.subtract(b) + " = 1/6");
+    System.out.println("a.subtract(c) -> " + a.subtract(c) + " = 5/18");
+    System.out.println("b.subtract(c) -> " + b.subtract(c) + " = 1/9");
     System.out.println();
 
   }
