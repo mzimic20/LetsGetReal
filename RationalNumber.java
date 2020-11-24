@@ -20,7 +20,7 @@ public class RationalNumber extends RealNumber {
   }
 
   public double getValue(){
-    return (double)(numerator / denominator);
+    return ((double)(numerator)) / denominator;
   }
 
   /**
@@ -43,14 +43,6 @@ public class RationalNumber extends RealNumber {
     RationalNumber recip = new RationalNumber(denominator, numerator);
     return recip;
   }
-  /**
-  *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.
-  */
-  public boolean equals(RationalNumber other){
-    if (this.getNumerator() == other.getNumerator() && this.getDenominator() == other.getDenominator()) return true;
-    else return false;
-  }
-
 
   /**
   *@return the value expressed as "3/4" or "8/3"
