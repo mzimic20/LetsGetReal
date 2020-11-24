@@ -179,6 +179,23 @@ public class Tester {
     System.out.println("b.subtract(c) -> " + b.subtract(c) + " = 1/9");
     System.out.println();
 
+    System.out.println("----- Number -----");
+
+    System.out.println( "a = " + a.getValue() );
+    System.out.println( "b = " + b.getValue() );
+    System.out.println( "c = " + c.getValue() );
+    System.out.println( "d = " + d.getValue() );
+    System.out.println( "e = " + e.getValue() );
+    System.out.println();
+
+    System.out.println("COMPARETO");
+    System.out.println( a.compareTo(b) );
+    System.out.println( b.compareTo(a) );
+    System.out.println( a.compareTo(c) );
+    System.out.println( c.compareTo(a) );
+    System.out.println( b.compareTo(c) );
+    System.out.println( c.compareTo(b) );
+
   }
 
 }
