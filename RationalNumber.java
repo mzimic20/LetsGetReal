@@ -35,6 +35,11 @@ public class RationalNumber extends RealNumber {
   public int getDenominator(){
     return denominator;
   }
+
+  public boolean equals(RationalNumber other) {
+    if ( this.getNumerator() == other.getNumerator() && this.getDenominator() == other.getDenominator() ) return true;
+    else return false;
+  }
   /**
   *@return a new RationalNumber that has the same numerator
   *and denominator as this RationalNumber but reversed.
